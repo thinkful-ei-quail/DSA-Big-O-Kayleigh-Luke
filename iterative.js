@@ -1,4 +1,4 @@
-
+'use strict';
 
 //ONE//
 function countSheep (num){
@@ -58,7 +58,18 @@ function stringSplitter( str, sep){
   console.log(result);
 }
 
-
+//SIX//
+function fibonnaciSequence (num) {
+  let prevNum = 0;
+  let tempNum = 0;
+  let currNum = 1;
+  for (let i = 0; i < num; i++) {
+    console.log(currNum + ', ');
+    prevNum = currNum;
+    currNum += tempNum;
+    tempNum = prevNum;
+  }
+}
 
 //TESTING ZONE//
 
@@ -67,3 +78,4 @@ console.log(powerCalculator(5, 3));
 reverseString('hello goodbye!');
 nthTriangular(3);
 stringSplitter('02/20/2020','/');
+fibonnaciSequence(6);
