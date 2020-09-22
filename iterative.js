@@ -1,4 +1,4 @@
-'use strict';
+
 
 //ONE//
 function countSheep (num){
@@ -71,6 +71,15 @@ function fibonnaciSequence (num) {
   }
 }
 
+//SEVEN//
+function factorial(num){
+  let result= 1;
+  for (let i = 1 ; i<= num; i++){
+    result *= i;
+  }
+  console.log(result);
+}
+
 //TESTING ZONE//
 
 countSheep(3);
@@ -79,3 +88,4 @@ reverseString('hello goodbye!');
 nthTriangular(3);
 stringSplitter('02/20/2020','/');
 fibonnaciSequence(6);
+factorial(1);
