@@ -1,9 +1,9 @@
-'use strict';
+
 
 //ONE//
 function countSheep (num){
   for( let i =0; i< num ; i++){
-    console.log(`${num-i} : Another sheep jumps oner the fence`)
+    console.log(`${num-i} : Another sheep jumps oner the fence`);
   }
   console.log('All sheep jumped over the fence');
 }
@@ -43,6 +43,22 @@ function nthTriangular (num) {
   }
 }
 
+//FIVE//
+function stringSplitter( str, sep){
+  let result = [];
+  let start = 0;
+  for (let i = 0; i< str.length; i++){
+    if ( str[i] === sep){
+      result.push(str.slice(start, i));
+
+      start= i+1;
+    }
+  }
+  result.push(str.slice(start));
+  console.log(result);
+}
+
+
 
 //TESTING ZONE//
 
@@ -50,3 +66,4 @@ countSheep(3);
 console.log(powerCalculator(5, 3));
 reverseString('hello goodbye!');
 nthTriangular(3);
+stringSplitter('02/20/2020','/');
