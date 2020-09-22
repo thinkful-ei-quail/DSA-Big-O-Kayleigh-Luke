@@ -30,9 +30,23 @@ function reverseString (str){
   console.log(result);
 }
 
+//FOUR//
+function nthTriangular (num) {
+  if (num >= 1 && (num - Math.floor(num) === 0) && typeof num === 'number') {
+    let result = 0;
+    for (let i = 1; i <= num; i++) {
+      result += i;
+    }
+    console.log(result);
+  } else {
+    console.log('please use a valid num');
+  }
+}
+
 
 //TESTING ZONE//
 
 countSheep(3);
 console.log(powerCalculator(5, 3));
 reverseString('hello goodbye!');
+nthTriangular(3);
