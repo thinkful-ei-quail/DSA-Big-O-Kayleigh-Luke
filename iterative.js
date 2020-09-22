@@ -21,8 +21,18 @@ function powerCalculator (base, exponent) {
   // return Math.pow(base, exponent);
 }
 
+//THREE//
+function reverseString (str){
+  let result = '';
+  for (let i = str.length - 1; i >= 0; i-- ){
+    result += str[i];
+  }
+  console.log(result);
+}
+
 
 //TESTING ZONE//
 
 countSheep(3);
 console.log(powerCalculator(5, 3));
+reverseString('hello goodbye!');
